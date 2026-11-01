@@ -66,6 +66,7 @@ function App() {
               <span className="field-label">Full name</span>
               <input
                 autoComplete="name"
+                lang="gu"
                 maxLength={48}
                 placeholder="e.g. Asha Mehta"
                 required
@@ -91,6 +92,7 @@ function App() {
               <span className="field-label">Address</span>
               <textarea
                 autoComplete="street-address"
+                lang="gu"
                 maxLength={110}
                 placeholder="Street, city, postal code"
                 required
