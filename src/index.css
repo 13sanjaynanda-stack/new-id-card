@@ -314,6 +314,37 @@ h2 {
   font-size: 10px;
 }
 
+.layout-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: -10px 0 14px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.layout-controls button {
+  flex: 0 0 auto;
+  padding: 6px 9px;
+  border: 1px solid #cddbd1;
+  border-radius: 3px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.layout-controls button:hover {
+  border-color: var(--green);
+}
+
+.layout-notice {
+  margin: -8px 0 12px;
+  color: #a13e32;
+  font-size: 11px;
+}
+
 .card-stage {
   min-height: 330px;
   display: grid;
@@ -337,8 +368,6 @@ h2 {
 
 .static-image-frame {
   position: absolute;
-  top: 6%;
-  left: 4%;
   width: 20%;
   aspect-ratio: 1;
   overflow: hidden;
@@ -354,9 +383,8 @@ h2 {
 
 .card-organization {
   position: absolute;
-  top: 5%;
-  right: 7%;
-  left: 29%;
+  width: 64%;
+  height: 14%;
   display: grid;
   gap: 1%;
   color: #1c2a27;
@@ -365,23 +393,21 @@ h2 {
 }
 
 .card-organization strong {
-  font-size: 3.2cqw;
+  font-size: 3.8cqw;
   line-height: 1.25;
 }
 
 .card-organization span {
   color: #527367;
-  font-size: 2.65cqw;
-  font-weight: 600;
+  font-size: 3.5cqw;
+  font-weight: 700;
   line-height: 1.2;
 }
 
 .card-copy {
   position: absolute;
-  top: 28%;
-  right: 30%;
-  bottom: 8%;
-  left: 27%;
+  width: 43%;
+  height: 64%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -401,7 +427,7 @@ h2 {
   margin: 0 0 4%;
   color: #1c2a27;
   font-family: 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
-  font-size: 6.1cqw;
+  font-size: 3.2cqw;
   font-weight: 800;
   line-height: 1.08;
   overflow-wrap: anywhere;
@@ -428,7 +454,7 @@ h2 {
   display: -webkit-box;
   overflow: hidden;
   color: #35433e;
-  font-size: 2.65cqw;
+  font-size: 3.2cqw;
   font-weight: 500;
   line-height: 1.25;
   overflow-wrap: anywhere;
@@ -437,14 +463,12 @@ h2 {
 }
 
 .address-contact .contact-value {
-  font-size: 2.35cqw;
+  font-size: 3.2cqw;
   -webkit-line-clamp: 3;
 }
 
 .photo-frame {
   position: absolute;
-  top: 29%;
-  right: 7%;
   width: 20%;
   height: 46%;
   overflow: hidden;
@@ -455,6 +479,21 @@ h2 {
   color: #7e9187;
   font-size: 2.3cqw;
   font-weight: 700;
+}
+
+.draggable-card-item {
+  touch-action: none;
+  user-select: none;
+  cursor: grab;
+}
+
+.draggable-card-item:active {
+  cursor: grabbing;
+}
+
+.draggable-card-item:focus-visible {
+  outline: 1px dashed var(--green);
+  outline-offset: 1px;
 }
 
 .photo-frame img {
