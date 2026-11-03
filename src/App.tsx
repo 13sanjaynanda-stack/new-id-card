@@ -148,7 +148,6 @@ function App() {
                 <span>માર્કેટિંગ યાર્ડ , રાજકોટ - ૩</span>
               </header>
               <div className="card-copy">
-                <span className="card-kicker">PERSONAL DETAILS</span>
                 <h3>{details.name || 'Your name'}</h3>
                 <div className="card-contact">
                   <span className="contact-key">PHONE</span>
