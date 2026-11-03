@@ -13,6 +13,8 @@ npm run dev
 
 Open the local URL printed by Vite. Complete all fields, choose a photo, and select **Prepare PDF**. In the print dialog, choose **Save as PDF**, enable background graphics, and keep scale at 100% / actual size.
 
+Drag the image, organization heading, personal details, and uploaded photo in the live preview to reposition them. Use the arrow keys for fine adjustments or **Reset layout** to restore the defaults. The layout is saved in this browser; it is not uploaded.
+
 The form data and photo are handled in the browser and are not uploaded.
 
 ## Publish with GitHub Pages
